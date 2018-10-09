@@ -1,7 +1,7 @@
-## KissanimeAdRemover
+# KissanimeAdRemover
 Removes ads from Kissanime ¯\_(ツ)_/¯
 
-# Note
+## Note
 Doesn't do captcha or block popups/new tabs.
 
 ## Installation
