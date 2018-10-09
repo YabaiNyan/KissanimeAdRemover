@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Kissanime Ad Remover
 // @namespace    https://github.com/YabaiNyan/KissanimeAdRemover
-// @version      0.1
+// @version      0.2
 // @description  Instead of blocking the ads, just delete them. ¯\_(ツ)_/¯
 // @author       YabaiNyan
 // @match        http://kissanime.ru/*
@@ -14,7 +14,7 @@
     $(document).ready(function() {
         var removeElementArr = ["#adsIfrme1","#divAds","#divAds2",".bebi-icon-hover","#adsIfrme7", "#adsIfrme6", "#divFloatLeft", "#divFloatRight"]
         removeArr(removeElementArr);
-        if (typeof $("#rightside")[0] !== "undefined") {
+        if (typeof $("#rightside")[0].children[4] !== "undefined") {
             $("#rightside")[0].children[4].remove()
         }
         findbebi();
